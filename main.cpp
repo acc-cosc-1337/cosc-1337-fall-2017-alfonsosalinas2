@@ -17,7 +17,7 @@ Salary employees don't qualify for OT pay
 #include <string>
 #include <iomanip>
 #include "Payroll.h"
-#include <sstream>
+//#include <sstream>
 
 using namespace std;
 
@@ -88,9 +88,9 @@ int main()
 		net_pay = getNetPay(gross_pay, fica_med, fica_ss, fit);
 
 		//format headers with tab spacing and values formatted for columns with 2 decimal places
-		ss = stringPayroll(name, total_hours, ot_hours, pay_rate, ot_rate, regular_pay, ot_pay, gross_pay, fica_ss, fica_med, fit, net_pay);
-		cout << endl;
-		output += ss.str();
+		//ss = stringPayroll(name, total_hours, ot_hours, pay_rate, ot_rate, regular_pay, ot_pay, gross_pay, fica_ss, fica_med, fit, net_pay);
+		//cout << endl;
+		//output += ss.str();
 
 	}
 
