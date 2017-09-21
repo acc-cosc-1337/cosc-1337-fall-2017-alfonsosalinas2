@@ -3,7 +3,7 @@
 #include <iostream>
 #include <iomanip>
 #include <string>
-#include <sstream>
+//#include <sstream>
 
 using namespace std;
 
@@ -135,7 +135,7 @@ int getTotalHours(int regular_hours, int ot_hours)
 	return regular_hours + ot_hours;
 }
 //getNetPay uses the functions getGrossPay, getFIT, getFICASSN, getFICAMED
-stringstream stringPayroll(string name, int total_hours, int ot_hours, double pay_rate, double ot_rate, double regular_pay, double ot_pay, double gross_pay, double fica_ss, double fica_med, double fit, double net_pay)
+/*stringstream stringPayroll(string name, int total_hours, int ot_hours, double pay_rate, double ot_rate, double regular_pay, double ot_pay, double gross_pay, double fica_ss, double fica_med, double fit, double net_pay)
 {
 	stringstream ss;
 	//format headers with tab spacing and values formatted for columns with 2 decimal places
@@ -155,7 +155,7 @@ stringstream stringPayroll(string name, int total_hours, int ot_hours, double pa
 		<< endl;
 	return ss;
 
-}
+} */
 void printPayroll(string output)
 {
 	cout << "\nName \t\tHours \t OT Hours \t Rate \t OT Rate \t Regular Pay \t OT Pay \t Gross Pay \t FICA SSN \t FICA Med \t FIT \t Net Pay" << endl;
