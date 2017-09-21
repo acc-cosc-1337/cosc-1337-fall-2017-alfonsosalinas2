@@ -23,7 +23,7 @@ using namespace std;
 
 int main()
 {
-	stringstream ss;
+	//stringstream ss;
 	string output;
 
 	string name,
