@@ -19,3 +19,9 @@ TEST(payrollTests, test_get_net_pay_if_gross_1000_fmed_150_fssn_20_fit_300){
 TEST(payrollTests, test_get_net_pay_if_gross_5000_fmed_100_fssn_200_fit_300){
     EXPECT_EQ(4400, getNetPay(5000,100,200,300));
 }
+TEST(payrollTests, test_get_fit_if_gross_5000_fit_rate_05){
+    EXPECT_EQ(250, getFIT(5000,0.05));
+}
+TEST(payrollTests, test_get_fit_if_gross_400_fit_rate_15){
+    EXPECT_EQ(60, getFIT(400,0.15));
+}
