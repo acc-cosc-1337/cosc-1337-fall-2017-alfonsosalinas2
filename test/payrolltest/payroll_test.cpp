@@ -13,3 +13,9 @@ TEST(payrollTests, test_get_salary_regular_pay_50k_bi_weekly){
 TEST(payrollTests, test_get_hourly_regular_pay_40_pay_rate_20){
     EXPECT_EQ(800, getHourlyRegularPay(40,20));
 }
+TEST(payrollTests, test_get_regular_pay_if_hours_50_pay_rate_20){
+    EXPECT_EQ(1000, getHourlyRegularPay(50,20));
+}
+TEST(payrollTests, test_get_net_pay_if_gross_5000_fmed_100_fssn_200_fit_300){
+    EXPECT_EQ(4400, getNetPay(5000,100,200,300));
+}
