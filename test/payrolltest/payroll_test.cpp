@@ -10,7 +10,7 @@ TEST(payrollTests, test_get_regular_pay_if_hours_50_pay_rate_20){
 TEST(payrollTests, test_get_salary_regular_pay_50k_bi_weekly){
     EXPECT_EQ(1923.076923076923, getSalaryRegularPay(50000,26));
 }
-TEST(payrollTests, test_get_salary_regular_pay_50k_bi_weekly){
+TEST(payrollTests, test_get_salary_regular_pay_100k_bi_weekly){
     EXPECT_EQ(3846.153846153846, getSalaryRegularPay(100000,26));
 }
 TEST(payrollTests, test_get_net_pay_if_gross_1000_fmed_150_fssn_20_fit_300){
